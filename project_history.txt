@@ -1,0 +1,6 @@
+    1  echo "PermitRootLogin yes" >> /etc/ssh/sshd_config
+    2  systemctl restart sshd
+    3  curls -s http://192.168.1.100 -o /root/curl_output.txt
+    4  curl -s http://192.168.1.100 -o /root/curl_output.txt
+    5  cat /root/curl_output.txt
+    6  history > /root/project_history.txt
